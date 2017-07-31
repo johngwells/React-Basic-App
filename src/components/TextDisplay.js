@@ -5,7 +5,12 @@ class TextDisplay extends Component {
   
   render() {
     // need to display text from parent
-    return <div>{this.props.text}</div>
+    return (
+      <div>
+        <div>{this.props.text}</div>
+        <button>delete one letter</button>
+      </div>
+    )
   }
 }
 
